@@ -1,107 +1,339 @@
 [
-  {
-    "code": "S.USER",
-	"desc": "Verifies user credentials and returns user's profile",
-    "payload": {
-    "ActionCode": "S.USER",
-    "ViewName": "LOGIN",
-    "ClientIP": "72.255.40.37",
-    "JsonReq": {
-				"JHeader": {
-					"Client": "ELITE",
-					"Source": "NativeApp",
-					"Target": "DBAPI",
-					"DeviceType": "Mobile",
-					"DeviceInfo": "iPhone 14 A2483",
-					"DeviceID": "72.255.40.37",
-					"ViewName": "LOGIN",
-					"ActionCode": "S.USER",
-					"ClientVersion": "1.0.0",
-					"APIVersion": "1.0.1",
-					"APILogin": "user@webapis.com",
-					"APIPassword": "12345",
-					"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-					"Debug": "false"
-				},
-				"JMetaData": {},
-				"JData": {
-					"p_VP_COMPANY_NUM": "101",
-					"p_VP_ACCOUNT_NUM": "",
-					"p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
-					"p_VP_PASSWORD": "kazim"
-				}
-			}	,
-    "Notes": "Test Notes ..."
-}
-  },
-  {
-    "code": "S.USER.ADDRESSES",
-	"desc": "Returns user's addreses against unique id",
-    "payload": {
-    "ActionCode": "S.USER.ADDRESSES",
-    "ViewName": "LOGIN",
-    "ClientIP": "72.255.40.37",
-    "JsonReq": {
-        "JHeader": {
-            "Client": "ELITE",
-            "Source": "NativeApp",
-            "Target": "DBAPI",
-            "DeviceType": "Mobile",
-            "DeviceInfo": "iPhone 14 A2483",
-            "DeviceID": "72.255.40.37",
+    {
+        "code": "S.USER",
+        "desc": "Verifies user credentials and returns user's profile",
+        "payload": {
+            "ActionCode": "S.USER",
             "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Mobile",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "72.255.40.37",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.USER",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "",
+                    "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
+                    "p_VP_PASSWORD": "kazim"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "A.PROFILE",
+        "desc": "Creates user profile in the database",
+        "payload": {
+            "ActionCode": "A.PROFILE",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "A.PROFILE",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "",
+                    "p_AP_COMPANY_NAME": "",
+                    "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
+                    "p_VP_PASSWORD": "kazim",
+                    "p_VP_FIRST_NAME": "Kazim",
+                    "p_VP_LAST_NAME": "Bukhari",
+                    "p_VP_AREA_CODE": "212",
+                    "p_VP_PHONE_NUM": "",
+                    "p_VCI_CARD_TYPE": "0",
+                    "p_VCI_PRIMARY_CARD": "Y",
+                    "p_VCI_CARD_NUM": "371560796392029",
+                    "p_VCI_EXPIRATION_DATE": "10/2016",
+                    "p_VCI_CVV2_CODE": "",
+                    "p_VCI_ISPERSONAL": "N",
+                    "p_VCI_CARD_HOLDER_NAME": "",
+                    "p_VCI_COUNTRY": "",
+                    "p_VCI_STATE": "",
+                    "p_VCI_CITY": "",
+                    "p_VCI_ADDRESS_1": "",
+                    "p_VCI_ADDRESS_2": "",
+                    "p_VCI_ZIP": ""
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "S.ACCOUNT.VERIFICATION",
+        "desc": "Verifies account number and account name from the db",
+        "payload": {
+            "ActionCode": "S.ACCOUNT.VERIFICATION",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.ACCOUNT.VERIFICATION",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "TEST",
+                    "p_AP_COMPANY_NAME": "TEST"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "A.EMAIL.OTP",
+        "desc": "Generates OTP and sends in the email",
+        "payload": {
+            "ActionCode": "A.EMAIL.OTP",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "A.EMAIL.OTP",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "TEST",
+                    "p_AUEV_EMAILID": "kazimbukhari@gmail.com",
+                    "p_AUEV_FIRSTNAME": "Kazim"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "A.PHONE.OTP",
+        "desc": "Generates OTP and sends in the SMS",
+        "payload": {
+            "ActionCode": "A.PHONE.OTP",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "A.PHONE.OTP",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "TEST",
+                    "p_AUEV_PHONENUMBER": "+92-300-4259505",
+                    "p_AUEV_FIRSTNAME": "Kazim"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "S.VALIDATE.CC",
+        "desc": "Validates the credit card information",
+        "payload": {
+            "ActionCode": "S.VALIDATE.CC",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.VALIDATE.CC",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "",
+                    "p_VP_USERID": "2013112700011",
+                    "p_VCI_ISPERSONAL": "N",
+                    "p_VCI_CARD_TYPE": "0",
+                    "p_VCI_CARD_NUM": "371560796392029",
+                    "p_VCI_EXPIRATION_DATE": "10/2016",
+                    "p_VCI_CVV2_CODE": "",
+                    "p_VCI_ZIP": ""
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "U.PASSWORD",
+        "desc": "Resets or changes password of the user",
+        "payload": {
+            "ActionCode": "U.PASSWORD",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "U.PASSWORD",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "TEST",
+                    "p_VP_USERID": "2013112700011",
+                    "p_VP_NEW_PASSWORD": "pwd5678"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "S.USER.ADDRESSES",
+        "desc": "Returns user's addreses against unique id",
+        "payload": {
             "ActionCode": "S.USER.ADDRESSES",
-            "ClientVersion": "1.0.0",
-            "APIVersion": "1.0.1",
-            "APILogin": "user@webapis.com",
-            "APIPassword": "12345",
-            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-            "Debug": "false"
-        },
-        "JMetaData": {},
-        "JData": {
-            "p_COMPANY_NUM": "101",
-            "p_ACCOUNT_NUM": "",
-            "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
-            "p_VP_VIPUNIQUEID": "2014092400038"
-        }
-    },
-    "Notes": "Test Notes ..."
-}
-  },
-  {
-    "code": "S.PROFILE.ADDRESSES",
-	"desc": "Returns user's addreses against user credentials",
-    "payload": {
-    "ActionCode": "S.PROFILE.ADDRESSES",
-    "ViewName": "LOGIN",
-    "ClientIP": "72.255.40.37",
-    "JsonReq": {
-        "JHeader": {
-            "Client": "ELITE",
-            "Source": "NativeApp",
-            "Target": "DBAPI",
-            "DeviceType": "Mobile",
-            "DeviceInfo": "iPhone 14 A2483",
-            "DeviceID": "72.255.40.37",
             "ViewName": "LOGIN",
-            "ActionCode": "S.PROFILE.ADDRESSES",
-            "ClientVersion": "1.0.0",
-            "APIVersion": "1.0.1",
-            "APILogin": "user@webapis.com",
-            "APIPassword": "12345",
-            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-            "Debug": "false"
-        },
-        "JMetaData": {},
-        "JData": {
-            "p_COMPANY_NUM": "101",
-            "p_ACCOUNT_NUM": "",
-            "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
-            "p_VP_PASSWORD": "kazim"
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Mobile",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "72.255.40.37",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.USER.ADDRESSES",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_COMPANY_NUM": "101",
+                    "p_ACCOUNT_NUM": "",
+                    "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
+                    "p_VP_VIPUNIQUEID": "2014092400038"
+                }
+            },
+            "Notes": "Test Notes ..."
         }
     },
-    "Notes": "Test Notes ..."
-}
-  }
+    {
+        "code": "S.PROFILE.ADDRESSES",
+        "desc": "Returns user's addreses against user credentials",
+        "payload": {
+            "ActionCode": "S.PROFILE.ADDRESSES",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Mobile",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "72.255.40.37",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.PROFILE.ADDRESSES",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_COMPANY_NUM": "101",
+                    "p_ACCOUNT_NUM": "",
+                    "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
+                    "p_VP_PASSWORD": "kazim"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    }
 ]
