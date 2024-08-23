@@ -442,73 +442,633 @@
         }
     },
     {
-        "code": "S.USER.ADDRESSES",
-        "desc": "Returns user's addreses against unique id",
+        "code": "S.VIP.PROFILE",
+        "desc": "Loads User Profile",
         "payload": {
-            "ActionCode": "S.USER.ADDRESSES",
-            "ViewName": "LOGIN",
-            "ClientIP": "72.255.40.37",
-            "JsonReq": {
-                "JHeader": {
-                    "Client": "ELITE",
-                    "Source": "NativeApp",
-                    "Target": "DBAPI",
-                    "DeviceType": "Mobile",
-                    "DeviceInfo": "iPhone 14 A2483",
-                    "DeviceID": "72.255.40.37",
-                    "ViewName": "LOGIN",
-                    "ActionCode": "S.USER.ADDRESSES",
-                    "ClientVersion": "1.0.0",
-                    "APIVersion": "1.0.1",
-                    "APILogin": "user@webapis.com",
-                    "APIPassword": "12345",
-                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                    "Debug": "false"
-                },
-                "JMetaData": {},
-                "JData": {
-                    "p_COMPANY_NUM": "101",
-                    "p_ACCOUNT_NUM": "",
-                    "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
-                    "p_VP_VIPUNIQUEID": "2014092400038"
-                }
-            },
-            "Notes": "Test Notes ..."
-        }
-    },
-    {
-        "code": "S.PROFILE.ADDRESSES",
-        "desc": "Returns user's addreses against user credentials",
-        "payload": {
-            "ActionCode": "S.PROFILE.ADDRESSES",
-            "ViewName": "LOGIN",
-            "ClientIP": "72.255.40.37",
-            "JsonReq": {
-                "JHeader": {
-                    "Client": "ELITE",
-                    "Source": "NativeApp",
-                    "Target": "DBAPI",
-                    "DeviceType": "Mobile",
-                    "DeviceInfo": "iPhone 14 A2483",
-                    "DeviceID": "72.255.40.37",
-                    "ViewName": "LOGIN",
-                    "ActionCode": "S.PROFILE.ADDRESSES",
-                    "ClientVersion": "1.0.0",
-                    "APIVersion": "1.0.1",
-                    "APILogin": "user@webapis.com",
-                    "APIPassword": "12345",
-                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                    "Debug": "false"
-                },
-                "JMetaData": {},
-                "JData": {
-                    "p_COMPANY_NUM": "101",
-                    "p_ACCOUNT_NUM": "",
-                    "p_VP_LOGIN_ID": "KAZIMBUKHARI@GMAIL.COM",
-                    "p_VP_PASSWORD": "kazim"
-                }
-            },
-            "Notes": "Test Notes ..."
-        }
+					"ActionCode": "S.VIP.PROFILE",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.VIP.PROFILE",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
     }
+	,
+    {
+        "code": "U.VIP.PROFILE",
+        "desc": "Updates User Profile",
+        "payload": {
+					"ActionCode": "U.VIP.PROFILE",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "U.VIP.PROFILE",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									
+									"p_VP_FIRST_NAME": "Kazim",
+									"p_VP_LAST_NAME": "Bukhari",
+									"p_VPICT_PICTURE":"",
+									"p_VUP_PHONE_CONFIRMATION":"Y",
+									"p_VUP_NOSUV":"Y"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				} 
+    }
+	,
+    {
+        "code": "D.VIP.PROFILE",
+        "desc": "Deletes User Profile",
+        "payload": {
+					"ActionCode": "D.VIP.PROFILE",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "D.VIP.PROFILE",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "S.DROPDOWN",
+        "desc": "Get Countries List",
+        "payload": {
+					"ActionCode": "S.DROPDOWN",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.DROPDOWN",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "",
+									"p_DROPDOWN_FOR": "COUNTRIES"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "S.DROPDOWN",
+        "desc": "Get US States List",
+        "payload": {
+					"ActionCode": "S.DROPDOWN",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.DROPDOWN",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "",
+									"p_DROPDOWN_FOR": "STATES"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				} 
+    }
+	,
+    {
+        "code": "S.VIP.CREDIT.CARDS",
+        "desc": "Get User Credit Cards List",
+        "payload":{
+					"ActionCode": "S.VIP.CREDIT.CARDS",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.VIP.CREDIT.CARDS",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				} 
+    }
+	,
+    {
+        "code": "U.VIP.CREDIT.CARD",
+        "desc": "Add or Update Credit Card Info",
+        "payload": {
+					"ActionCode": "U.VIP.CREDIT.CARD",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "U.VIP.CREDIT.CARD",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VCI_SEQ_NUM":"0",
+									"p_VCI_CARD_TYPE": "0",
+									"p_VCI_PRIMARY_CARD": "",
+									"p_VCI_CARD_NUM": "371560796392029",
+									"p_VCI_EXPIRATION_DATE": "10/2026",
+									"p_VCI_CVV2_CODE": "123",
+									"p_VCI_ISPERSONAL": "N",
+									"p_VCI_CARD_HOLDER_NAME": "Syed Kazim Bukhari",
+									"p_VCI_COUNTRY": "US",
+									"p_VCI_ADDRESS_1": "3272 Gale Ave",
+									"p_VCI_ADDRESS_2": "Long Island City",
+									"p_VCI_CITY": "New York",
+									"p_VCI_STATE": "NY",
+									"p_VCI_ZIP": "11101",
+									"p_VCI_COMMENTS": ""
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "D.VIP.CREDIT.CARD",
+        "desc": "Delete Credit Card",
+        "payload": {
+					"ActionCode": "D.VIP.CREDIT.CARD",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "D.VIP.CREDIT.CARD",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VCI_SEQ_NUM":"2",
+									"p_VCI_ISPERSONAL": "N",
+									"p_VCI_CARD_TYPE": "0",
+									"p_VCI_CARD_NUM": "371560796392029",
+									"p_VCI_EXPIRATION_DATE": "10/2016",
+									"p_VCI_CVV2_CODE": "123",
+									"p_VCI_ZIP": "11101"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "S.ACCOUNT.REQUIREMENTS",
+        "desc": "Get Account Requirements",
+        "payload":{
+					"ActionCode": "S.ACCOUNT.REQUIREMENTS",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.ACCOUNT.REQUIREMENTS",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				} 
+    }
+	,
+    {
+        "code": "U.ACCOUNT.REQUIREMENT",
+        "desc": "Update Account Requirement",
+        "payload": {
+					"ActionCode": "U.ACCOUNT.REQUIREMENT",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "U.ACCOUNT.REQUIREMENT",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									
+									"p_AR_REQUIREMENT_NUM": "1",
+									"p_AR_LABEL": "Client Matter",
+									"p_AR_VERIFICATION_CODE": "V",
+									"p_AR_MASK": "#####-#####",
+									"p_AR_DEFAULT_VALUE": ""					
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "S.VIP.PROFILE.CONTACT.INFO",
+        "desc": "Get User Phone Numbers List",
+        "payload":{
+					"ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VPCI_CON_TYPE":"PHONE"
+									
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				} 
+    }
+	,
+    {
+        "code": "S.VIP.PROFILE.CONTACT.INFO",
+        "desc": "Get User Email Addresses List",
+        "payload": {
+					"ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VPCI_CON_TYPE":"EMAIL"
+									
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "U.VIP.PROFILE.CONTACT.INFO",
+        "desc": "Update User Phone Number",
+        "payload": {
+					"ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VPCI_CON_TYPE":"PHONE",
+									"p_VPCI_MOBILE":"N",
+									"p_VPCI_CON_LABEL":"OFFICE PHONE",
+									"p_VPCI_CON_VALUE":"+1 7183923434 345",
+									"p_VPCI_CONFIRMATION_METHOD":"Phone"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "U.VIP.PROFILE.CONTACT.INFO",
+        "desc": "Update User Email Address",
+        "payload": {
+					"ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VPCI_CON_TYPE":"EMAIL",
+									"p_VPCI_CON_LABEL":"OFFICE EMAIL",
+									"p_VPCI_CON_VALUE":"KAZIM@SOUNDVIEWTECH.COM",
+									"p_VPCI_CONFIRMATION_METHOD":"Email"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "D.VIP.PROFILE.CONTACT.INFO",
+        "desc": "Delete User Phone Number",
+        "payload": {
+					"ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VPCI_CON_TYPE":"PHONE",
+									"p_VPCI_MOBILE":"N",
+									"p_VPCI_CON_LABEL":"OFFICE PHONE",
+									"p_VPCI_CON_VALUE":"+1 7183923434 345",
+									"p_VPCI_CONFIRMATION_METHOD":"Phone"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	,
+    {
+        "code": "D.VIP.PROFILE.CONTACT.INFO",
+        "desc": "Delete User Email Address",
+        "payload": {
+					"ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
+					"ViewName": "LOGIN",
+					"ClientIP": "72.255.40.37",
+					"JsonReq": {
+								"JHeader": {
+									"Client": "ELITE",
+									"Source": "NativeApp",
+									"Target": "DBAPI",
+									"DeviceType": "Apple",
+									"DeviceInfo": "iPhone 14 A2483",
+									"DeviceID": "ABCDEF12-34567890ABCDEF12",
+									"ViewName": "LOGIN",
+									"ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
+									"ClientVersion": "1.0.0",
+									"APIVersion": "1.0.1",
+									"APILogin": "user@webapis.com",
+									"APIPassword": "12345",
+									"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+									"Debug": "false"
+								},
+								"JMetaData": {},
+								"JData": {
+									"p_VP_COMPANY_NUM": "101",
+									"p_VP_ACCOUNT_NUM": "515",
+									"p_VP_VIP_NUM": "9174553429",
+									"p_VP_USERID": "1234567891234",
+									"p_VPCI_CON_TYPE":"EMAIL",
+									"p_VPCI_CON_LABEL":"OFFICE EMAIL",
+									"p_VPCI_CON_VALUE":"KAZIM@SOUNDVIEWTECH.COM"
+								}
+							}	,
+					"Notes": "Test Notes ..."
+				}
+    }
+	
+	
 ]
