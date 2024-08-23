@@ -107,7 +107,7 @@
         "code": "A.VIP.PROFILE",
         "desc": "Creates user profile in the database",
         "payload": {
-            "ActionCode": "A.PROFILE",
+            "ActionCode": "A.VIP.PROFILE",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
