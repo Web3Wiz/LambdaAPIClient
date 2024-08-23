@@ -104,7 +104,7 @@
         }
     },
     {
-        "code": "A.PROFILE",
+        "code": "A.VIP.PROFILE",
         "desc": "Creates user profile in the database",
         "payload": {
             "ActionCode": "A.PROFILE",
@@ -119,7 +119,7 @@
                     "DeviceInfo": "iPhone 14 A2483",
                     "DeviceID": "ABCDEF12-34567890ABCDEF12",
                     "ViewName": "LOGIN",
-                    "ActionCode": "A.PROFILE",
+                    "ActionCode": "A.VIP.PROFILE",
                     "ClientVersion": "1.0.0",
                     "APIVersion": "1.0.1",
                     "APILogin": "user@webapis.com",
@@ -355,14 +355,15 @@
                 "JMetaData": {},
                 "JData": {
                     "p_VP_COMPANY_NUM": "101",
-                    "p_VP_ACCOUNT_NUM": "",
-                    "p_VP_USERID": "2013112700011",
-                    "p_VCI_ISPERSONAL": "N",
-                    "p_VCI_CARD_TYPE": "0",
-                    "p_VCI_CARD_NUM": "371560796392029",
-                    "p_VCI_EXPIRATION_DATE": "10/2016",
-                    "p_VCI_CVV2_CODE": "",
-                    "p_VCI_ZIP": ""
+					"p_VP_ACCOUNT_NUM": "515",
+					"p_VP_VIP_NUM": "9174553429",
+					"p_VP_USERID": "9999999999",
+					"p_VCI_ISPERSONAL": "N",
+					"p_VCI_CARD_TYPE": "0",
+					"p_VCI_CARD_NUM": "371560796392029",
+					"p_VCI_EXPIRATION_DATE": "10/2016",
+					"p_VCI_CVV2_CODE": "",
+					"p_VCI_ZIP": ""
                 }
             },
             "Notes": "Test Notes ..."
@@ -430,10 +431,11 @@
                 },
                 "JMetaData": {},
                 "JData": {
-                    "p_VP_COMPANY_NUM": "101",
-                    "p_VP_ACCOUNT_NUM": "TEST",
-                    "p_VP_USERID": "2013112700011",
-                    "p_VP_NEW_PASSWORD": "pwd5678"
+					"p_VP_COMPANY_NUM": "101",
+					"p_VP_ACCOUNT_NUM": "515",
+					"p_VP_VIP_NUM": "9174553429",
+					"p_VP_USERID": "2013112700011", 
+					"p_VP_NEW_PASSWORD": "pwd5678"
                 }
             },
             "Notes": "Test Notes ..."
