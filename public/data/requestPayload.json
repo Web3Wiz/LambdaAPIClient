@@ -556,7 +556,7 @@
     }
 	,
     {
-        "code": "S.DROPDOWN",
+        "code": "S.DROPDOWN.COUNTRIES",
         "desc": "Get Countries List",
         "payload": {
 					"ActionCode": "S.DROPDOWN",
@@ -591,7 +591,7 @@
     }
 	,
     {
-        "code": "S.DROPDOWN",
+        "code": "S.DROPDOWN.STATES",
         "desc": "Get US States List",
         "payload": {
 					"ActionCode": "S.DROPDOWN",
@@ -834,7 +834,7 @@
     }
 	,
     {
-        "code": "S.VIP.PROFILE.CONTACT.INFO",
+        "code": "S.VIP.PROFILE.CONTACT.INFO.PHONE",
         "desc": "Get User Phone Numbers List",
         "payload":{
 					"ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
@@ -872,7 +872,7 @@
     }
 	,
     {
-        "code": "S.VIP.PROFILE.CONTACT.INFO",
+        "code": "S.VIP.PROFILE.CONTACT.INFO.EMAIL",
         "desc": "Get User Email Addresses List",
         "payload": {
 					"ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
@@ -910,7 +910,7 @@
     }
 	,
     {
-        "code": "U.VIP.PROFILE.CONTACT.INFO",
+        "code": "U.VIP.PROFILE.CONTACT.INFO.PHONE",
         "desc": "Update User Phone Number",
         "payload": {
 					"ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
@@ -951,7 +951,7 @@
     }
 	,
     {
-        "code": "U.VIP.PROFILE.CONTACT.INFO",
+        "code": "U.VIP.PROFILE.CONTACT.INFO.EMAIL",
         "desc": "Update User Email Address",
         "payload": {
 					"ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
@@ -991,7 +991,7 @@
     }
 	,
     {
-        "code": "D.VIP.PROFILE.CONTACT.INFO",
+        "code": "D.VIP.PROFILE.CONTACT.INFO.PHONE",
         "desc": "Delete User Phone Number",
         "payload": {
 					"ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
@@ -1032,7 +1032,7 @@
     }
 	,
     {
-        "code": "D.VIP.PROFILE.CONTACT.INFO",
+        "code": "D.VIP.PROFILE.CONTACT.INFO.EMAIL",
         "desc": "Delete User Email Address",
         "payload": {
 					"ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
