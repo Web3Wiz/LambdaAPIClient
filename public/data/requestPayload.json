@@ -1,4 +1,36 @@
 [
+     {
+        "code": "S.APP.INFO",
+        "desc": "Fetches welcome screen images and text",
+        "payload": {
+	    "ActionCode": "S.APP.INFO",
+	    "ViewName": "LOGIN",
+	    "ClientIP": "72.255.40.37",
+	    "JsonReq": {
+			"JHeader": {
+				"Client": "ELITE",
+				"Source": "NativeApp",
+				"Target": "DBAPI",
+				"DeviceType": "Apple",
+				"DeviceInfo": "iPhone 14 A2483",
+				"DeviceID": "ABCDEF12-34567890ABCDEF12",
+				"ViewName": "LOGIN",
+				"ActionCode": "S.APP.INFO",
+				"ClientVersion": "1.0.0",
+				"APIVersion": "1.0.1",
+				"APILogin": "user@webapis.com",
+				"APIPassword": "12345",
+				"RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+				"Debug": "false"
+			},
+			"JMetaData": {},
+			"JData": {
+				"p_VP_COMPANY_NUM": "101"
+			}
+		}	,
+	    "Notes": "Test Notes ..."
+	}
+    },
     {
         "code": "S.USER",
         "desc": "Verifies user credentials and returns user's profile",
