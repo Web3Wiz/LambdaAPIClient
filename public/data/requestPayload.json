@@ -1170,6 +1170,26 @@
                     "p_CT_DO_TERMINAL_NUM": "",
                     "p_CT_DO_DEST_AIRPORT": "",
                     "p_CT_DO_DEST_CITY": "",
+                    "p_CT_STOPS": [
+                        {
+                            "FULLADDRESS": "3272 Gale Avenue ,New York, NY, United States",
+                            "REFERENCENUM": "NyIJ-7Dzc1xXwokRRBlRTKiRsnY",
+                            "LATITUDE": "40.76057",
+                            "LONGITUDE": "-73.89352",
+                            "IS_AIRPORT": "N",
+                            "ZIP4": "",
+                            "WT_MINUTES": "30"
+                        },
+                        {
+                            "FULLADDRESS": "366 37th St, West New York, NJ 07093, USA",
+                            "REFERENCENUM": "DjIJB79C-AFZwokRUCzTyckejXR",
+                            "LATITUDE": "40.7887955",
+                            "LONGITUDE": "-74.01045",
+                            "IS_AIRPORT": "N",
+                            "ZIP4": "07093",
+                            "WT_MINUTES": "10"
+                        }
+                    ],
                     "p_CT_OPTIONS": [
                         "NOSUV",
                         "WHEELCHAIR",
