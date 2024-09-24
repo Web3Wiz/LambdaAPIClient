@@ -147,6 +147,7 @@ const GatewayApiTest = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
+        responseType: "text", // Force axios to treat the response as text
       });
 
       return {
