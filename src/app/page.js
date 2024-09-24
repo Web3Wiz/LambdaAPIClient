@@ -161,7 +161,7 @@ const GatewayApiTest = () => {
       );
       return {
         status: "API Gateway Error",
-        text: `${error.message}`,
+        text: `${error.response ? error.response.data : error.message}`,
       };
     }
   };
