@@ -1,17 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from "./page.module.css";
+import styles from "../flights.module.css";
 import {
   CognitoIdentityProviderClient,
   InitiateAuthCommand,
 } from "@aws-sdk/client-cognito-identity-provider";
 import axios from "axios";
-import Link from "next/link";
 
-const GatewayApiTest = () => {
+const FlightViewApiTest = () => {
   const [gatewayApiUrl, setGatewayApiUrl] = useState(
-    process.env.NEXT_PUBLIC_API_GATEWAY_URL
+    process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL
   );
   const [gatewayApiRequest, setGatewayApiRequest] = useState();
   const [gatewayApiResponseStatus, setGatewayApiResponseStatus] = useState("");
@@ -39,7 +38,7 @@ const GatewayApiTest = () => {
     // Fetch action codes from JSON file when component mounts
     const fetchActionCodes = async () => {
       try {
-        const response = await fetch("/data/requestPayload.json");
+        const response = await fetch("/data/requestFlightsPayload.json");
         if (!response.ok) {
           throw new Error("Failed to load action codes");
         }
@@ -169,9 +168,9 @@ const GatewayApiTest = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Gateway API Test</h1>
+      <h1 className={styles.heading}>FlightView API Test</h1>
       <div className={styles.lblLink}>
-        <Link href="/flights">FlightView API</Link>
+        <a href="/">Gateway API</a>
       </div>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.formGroup}>
@@ -228,7 +227,7 @@ const GatewayApiTest = () => {
 
         <div className={styles.formGroup}>
           <label htmlFor="txtGatewayAPIURL" className={styles.label}>
-            Gateway API URL
+            FlightView API URL
           </label>
           <input
             type="text"
@@ -242,7 +241,7 @@ const GatewayApiTest = () => {
 
         <div className={styles.formGroup}>
           <label htmlFor="actionCode" className={styles.label}>
-            Gateway API Request Action Code
+            FlightView API Request Action Code
           </label>
           <select
             id="actionCode"
@@ -265,7 +264,7 @@ const GatewayApiTest = () => {
 
         <div className={styles.formGroup}>
           <label htmlFor="txtGatewayAPIRequest" className={styles.label}>
-            Gateway API Request Payload
+            FlightView API Request Payload
           </label>
           <textarea
             id="txtGatewayAPIRequest"
@@ -277,7 +276,7 @@ const GatewayApiTest = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="txtGatewayAPIResponseStatus" className={styles.label}>
-            Gateway API Response Status
+            FlightView API Response Status
           </label>
           <input
             type="text"
@@ -290,7 +289,7 @@ const GatewayApiTest = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="txtGatewayAPIResponseText" className={styles.label}>
-            Gateway API Response
+            FlightView API Response
           </label>
           <textarea
             id="txtGatewayAPIResponseText"
@@ -314,4 +313,4 @@ const GatewayApiTest = () => {
   );
 };
 
-export default GatewayApiTest;
+export default FlightViewApiTest;

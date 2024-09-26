@@ -1,0 +1,101 @@
+[
+    {
+        "code": "S.FLIGHT.SCHEDULE.DEPARTURE.AIRLINES",
+        "desc": "Get Departure Airlines and Flight Nums",
+        "payload": 
+        {
+            "ActionCode": "S.FLIGHT.SCHEDULE",
+            "ViewName": "ADDRESSES",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "ADDRESSES",
+                    "ActionCode": "S.FLIGHT.SCHEDULE",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude":"40.78200",
+                    "GPSLongitude":"-73.97783",
+                    "GPSSpeed":"22",
+                    "GPSBearing":"55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_COMPANY_NUM": "101",
+                    "p_ACCOUNT_NUM": "2199",
+                    "p_VIP_NUM": "2199031410",
+                    "p_VP_USERID": "2014092400038",
+                    "FlightID": "",
+                    "DepartureAirport": "LGA",
+                    "DepartureDate": "20240930",
+                    "DepartureHour": "1300",
+                    "ArrivalAirport": "",
+                    "ArrivalDate": "",
+                    "ArrivalHour": "",
+                    "Airline": "",
+                    "SimpleStatus": ""
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "S.FLIGHT.SCHEDULE.ARRIVAL.AIRLINES",
+        "desc": "Get Arrival Airlines and Flight Nums",
+        "payload": 
+        {
+            "ActionCode": "S.FLIGHT.SCHEDULE",
+            "ViewName": "ADDRESSES",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "ADDRESSES",
+                    "ActionCode": "S.FLIGHT.SCHEDULE",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude":"40.78200",
+                    "GPSLongitude":"-73.97783",
+                    "GPSSpeed":"22",
+                    "GPSBearing":"55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_COMPANY_NUM": "101",
+                    "p_ACCOUNT_NUM": "2199",
+                    "p_VIP_NUM": "2199031410",
+                    "p_VP_USERID": "2014092400038",
+                    "FlightID": "",
+                    "DepartureAirport": "",
+                    "DepartureDate": "",
+                    "DepartureHour": "",
+                    "ArrivalAirport": "JFK",
+                    "ArrivalDate": "20240929",
+                    "ArrivalHour": "1300",
+                    "Airline": "",
+                    "SimpleStatus": ""
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    }
+    
+]
