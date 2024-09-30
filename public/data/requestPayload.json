@@ -1789,7 +1789,7 @@
         "code": "S.CALL.TABLE.PAST",
         "desc": "Get Past Rides",
         "payload": {
-            "ActionCode": "S.CALL.TABLE.PAST",
+            "ActionCode": "S.CALL.TABLE",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
@@ -1801,7 +1801,7 @@
                             "DeviceInfo": "iPhone 14 A2483",
                             "DeviceID": "ABCDEF12-34567890ABCDEF12",
                             "ViewName": "LOGIN",
-                            "ActionCode": "S.CALL.TABLE.PAST",
+                            "ActionCode": "S.CALL.TABLE",
                             "ClientVersion": "1.0.0",
                             "APIVersion": "1.0.1",
                             "APILogin": "user@webapis.com",
@@ -1826,7 +1826,7 @@
                             "p_VP_USERID": "1234567891234",
                             "p_CT_FROM_DATE":"08/01/2024 12:00 AM",
                             "p_CT_TO_DATE":"08/31/2024 11:59 PM",
-                            "p_CT_LIST_TYPE":"1"
+                            "p_CT_LIST_TYPE":"P"
                         }
                     }	,
             "Notes": "Test Notes ..."
@@ -1836,7 +1836,7 @@
         "code": "S.CALL.TABLE.UPCOMING",
         "desc": "Get Upcoming Rides",
         "payload": {
-            "ActionCode": "S.CALL.TABLE.UPCOMING",
+            "ActionCode": "S.CALL.TABLE",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
@@ -1848,7 +1848,7 @@
                             "DeviceInfo": "iPhone 14 A2483",
                             "DeviceID": "ABCDEF12-34567890ABCDEF12",
                             "ViewName": "LOGIN",
-                            "ActionCode": "S.CALL.TABLE.UPCOMING",
+                            "ActionCode": "S.CALL.TABLE",
                             "ClientVersion": "1.0.0",
                             "APIVersion": "1.0.1",
                             "APILogin": "user@webapis.com",
@@ -1873,7 +1873,7 @@
                             "p_VP_USERID": "1234567891234",
                             "p_CT_FROM_DATE":"",
                             "p_CT_TO_DATE":"",
-                            "p_CT_LIST_TYPE":"2"
+                            "p_CT_LIST_TYPE":"U"
                         }
                     }	,
             "Notes": "Test Notes ..."
