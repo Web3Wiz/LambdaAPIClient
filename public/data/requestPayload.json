@@ -2,6 +2,7 @@
     {
         "code": "S.APP.INFO",
         "desc": "Fetches welcome screen images and text",
+        "notes": "",
         "payload": {
             "ActionCode": "S.APP.INFO",
             "ViewName": "LOGIN",
@@ -38,6 +39,7 @@
     {
         "code": "S.USER",
         "desc": "Verifies user credentials and returns user's profile",
+        "notes": "JMetaData.Headings: [DB COLUMN NAME, TITLE, Data Type, Format/Mask, Hidden, Field Type, ReadOnly | Editable, Required , Max Length, Min Length ]",
         "payload": {
             "ActionCode": "S.USER",
             "ViewName": "LOGIN",
@@ -77,6 +79,7 @@
     {
         "code": "S.EMAIL.EXISTS",
         "desc": "Checks if login id already exists in the system",
+        "notes": "",
         "payload": {
             "ActionCode": "S.EMAIL.EXISTS",
             "ViewName": "LOGIN",
@@ -115,6 +118,7 @@
     {
         "code": "S.PHONE.EXISTS",
         "desc": "Checks if phone number already exists in the system",
+        "notes": "",
         "payload": {
             "ActionCode": "S.PHONE.EXISTS",
             "ViewName": "LOGIN",
@@ -154,6 +158,7 @@
     {
         "code": "A.VIP.PROFILE",
         "desc": "Creates user profile in the database",
+        "notes": "",
         "payload": {
             "ActionCode": "A.VIP.PROFILE",
             "ViewName": "LOGIN",
@@ -211,6 +216,7 @@
     {
         "code": "S.ACCOUNT.VERIFICATION",
         "desc": "Verifies account number and account name from the db",
+        "notes": "",
         "payload": {
             "ActionCode": "S.ACCOUNT.VERIFICATION",
             "ViewName": "LOGIN",
@@ -249,6 +255,7 @@
     {
         "code": "A.EMAIL.OTP",
         "desc": "Generates OTP and sends in the email",
+        "notes": "",
         "payload": {
             "ActionCode": "A.EMAIL.OTP",
             "ViewName": "LOGIN",
@@ -288,6 +295,7 @@
     {
         "code": "S.EMAIL.OTP",
         "desc": "Verifies Email OTP",
+        "notes": "",
         "payload": {
             "ActionCode": "S.EMAIL.OTP",
             "ViewName": "LOGIN",
@@ -326,6 +334,7 @@
     {
         "code": "A.PHONE.OTP",
         "desc": "Generates OTP and sends in the SMS",
+        "notes": "",
         "payload": {
             "ActionCode": "A.PHONE.OTP",
             "ViewName": "LOGIN",
@@ -365,6 +374,7 @@
     {
         "code": "S.PHONE.OTP",
         "desc": "Verifies Phone OTP",
+        "notes": "",
         "payload": {
             "ActionCode": "S.PHONE.OTP",
             "ViewName": "LOGIN",
@@ -403,6 +413,7 @@
     {
         "code": "S.VALIDATE.CC",
         "desc": "Validates the credit card information",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VALIDATE.CC",
             "ViewName": "LOGIN",
@@ -448,6 +459,7 @@
     {
         "code": "S.VALIDATE.CC.MYSTERY.CHARGE",
         "desc": "Validates the credit card mystery charges",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VALIDATE.CC.MYSTERY.CHARGE",
             "ViewName": "LOGIN",
@@ -488,6 +500,7 @@
     {
         "code": "U.PASSWORD",
         "desc": "Resets or changes password of the user",
+        "notes": "",
         "payload": {
             "ActionCode": "U.PASSWORD",
             "ViewName": "LOGIN",
@@ -528,6 +541,7 @@
     {
         "code": "S.VIP.PROFILE",
         "desc": "Loads User Profile",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VIP.PROFILE",
             "ViewName": "LOGIN",
@@ -567,6 +581,7 @@
     {
         "code": "U.VIP.PROFILE",
         "desc": "Updates User Profile",
+        "notes": "",
         "payload": {
             "ActionCode": "U.VIP.PROFILE",
             "ViewName": "LOGIN",
@@ -611,6 +626,7 @@
     {
         "code": "D.VIP.PROFILE",
         "desc": "Deletes User Profile",
+        "notes": "",
         "payload": {
             "ActionCode": "D.VIP.PROFILE",
             "ViewName": "LOGIN",
@@ -650,6 +666,7 @@
     {
         "code": "S.DROPDOWN.COUNTRIES",
         "desc": "Get Countries List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.DROPDOWN",
             "ViewName": "LOGIN",
@@ -688,6 +705,7 @@
     {
         "code": "S.DROPDOWN.STATES",
         "desc": "Get US States List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.DROPDOWN",
             "ViewName": "LOGIN",
@@ -726,6 +744,7 @@
     {
         "code": "S.VIP.CREDIT.CARDS",
         "desc": "Get User Credit Cards List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VIP.CREDIT.CARDS",
             "ViewName": "LOGIN",
@@ -765,6 +784,7 @@
     {
         "code": "U.VIP.CREDIT.CARD",
         "desc": "Add or Update Credit Card Info",
+        "notes": "",
         "payload": {
             "ActionCode": "U.VIP.CREDIT.CARD",
             "ViewName": "LOGIN",
@@ -819,6 +839,7 @@
     {
         "code": "D.VIP.CREDIT.CARD",
         "desc": "Delete Credit Card",
+        "notes": "",
         "payload": {
             "ActionCode": "D.VIP.CREDIT.CARD",
             "ViewName": "LOGIN",
@@ -865,6 +886,7 @@
     {
         "code": "S.ACCOUNT.REQUIREMENTS",
         "desc": "Get Account Requirements",
+        "notes": "p_AR_VERIFICATION_CODE in response (1=Value not Required, 2=Required, 3=Validate table, 4=Pin #, 5=Verify List)",
         "payload": {
             "ActionCode": "S.ACCOUNT.REQUIREMENTS",
             "ViewName": "LOGIN",
@@ -904,6 +926,7 @@
     {
         "code": "U.ACCOUNT.REQUIREMENT",
         "desc": "Update Account Requirement",
+        "notes": "",
         "payload": {
             "ActionCode": "U.ACCOUNT.REQUIREMENT",
             "ViewName": "LOGIN",
@@ -948,6 +971,7 @@
     {
         "code": "S.VIP.PROFILE.CONTACT.INFO.PHONE",
         "desc": "Get User Phone Numbers List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
             "ViewName": "LOGIN",
@@ -988,6 +1012,7 @@
     {
         "code": "S.VIP.PROFILE.CONTACT.INFO.EMAIL",
         "desc": "Get User Email Addresses List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VIP.PROFILE.CONTACT.INFO",
             "ViewName": "LOGIN",
@@ -1028,6 +1053,7 @@
     {
         "code": "U.VIP.PROFILE.CONTACT.INFO.PHONE",
         "desc": "Update User Phone Number",
+        "notes": "",
         "payload": {
             "ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
             "ViewName": "LOGIN",
@@ -1072,6 +1098,7 @@
     {
         "code": "U.VIP.PROFILE.CONTACT.INFO.EMAIL",
         "desc": "Update User Email Address",
+        "notes": "",
         "payload": {
             "ActionCode": "U.VIP.PROFILE.CONTACT.INFO",
             "ViewName": "LOGIN",
@@ -1115,6 +1142,7 @@
     {
         "code": "D.VIP.PROFILE.CONTACT.INFO.PHONE",
         "desc": "Delete User Phone Number",
+        "notes": "",
         "payload": {
             "ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
             "ViewName": "LOGIN",
@@ -1159,6 +1187,7 @@
     {
         "code": "D.VIP.PROFILE.CONTACT.INFO.EMAIL",
         "desc": "Delete User Email Address",
+        "notes": "",
         "payload": {
             "ActionCode": "D.VIP.PROFILE.CONTACT.INFO",
             "ViewName": "LOGIN",
@@ -1201,6 +1230,7 @@
     {
         "code": "A.CALL.TABLE",
         "desc": "Book A Ride",
+        "notes": "p_CT_TRIP_TYPE: (1 = One Way,  2 = Hourly,  3 = Round Trip), p_CT_PAYMENT_TYPE:  (1 = Direct Bill, 2 = Credit Card), p_CT_AIRPORT_POLICY: (I = Inside, O = Outside, S = Standby)",
         "payload": {
             "ActionCode": "A.CALL.TABLE",
             "ViewName": "LOGIN",
@@ -1354,6 +1384,7 @@
     {
         "code": "S.USER.ADDRESSES",
         "desc": "Get Customer Addresses List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.USER.ADDRESSES",
             "ViewName": "LOGIN",
@@ -1393,6 +1424,7 @@
     {
         "code": "S.RECENT.ADDRESSES",
         "desc": "Get Customer`s Recent Addresses List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.RECENT.ADDRESSES",
             "ViewName": "LOGIN",
@@ -1432,6 +1464,7 @@
     {
         "code": "U.USER.ADDRESS",
         "desc": "Update Customer`s Address",
+        "notes": "p_VPU_PICKUP_COUNT: Address Id to update or mark as favorite, p_VPU_ADDRESSTYPE: ( Y = to mark as favorite, N = to remove as favorite) ",
         "payload": {
             "ActionCode": "U.USER.ADDRESS",
             "ViewName": "ADDRESSES",
@@ -1480,6 +1513,7 @@
     {
         "code": "S.PICKUP.POINTS",
         "desc": "Get Pickup Points List",
+        "notes": "",
         "payload": {
             "ActionCode": "S.PICKUP.POINTS",
             "ViewName": "LOGIN",
@@ -1541,6 +1575,7 @@
     {
         "code": "S.VEHICLE.TYPES",
         "desc": "Get Vehicle Types",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VEHICLE.TYPES",
             "ViewName": "LOGIN",
@@ -1579,6 +1614,7 @@
     {
         "code": "S.VEHICLES.LIST",
         "desc": "Get Vehicles List",
+        "notes": "p_CT_TRIP_TYPE: (1 = One Way,  2 = Hourly,  3 = Round Trip), p_CT_PAYMENT_TYPE:  (1 = Direct Bill, 2 = Credit Card), p_CT_AIRPORT_POLICY: (I = Inside, O = Outside, S = Standby)",
         "payload": {
             "ActionCode": "S.VEHICLES.LIST",
             "ViewName": "LOGIN",
@@ -1691,6 +1727,7 @@
     {
         "code": "S.VALIDATE.ACC.REQ.SUCCESS",
         "desc": "Validates Account Requirements - Success Case",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VALIDATE.ACC.REQ",
             "ViewName": "LOGIN",
@@ -1738,6 +1775,7 @@
     {
         "code": "S.VALIDATE.ACC.REQ.FAILURE",
         "desc": "Validates Account Requirements - Failure Case",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VALIDATE.ACC.REQ",
             "ViewName": "LOGIN",
@@ -1785,6 +1823,7 @@
     {
         "code": "S.VEHICLE.LOCATION",
         "desc": "Get Vehicle Location",
+        "notes": "",
         "payload": {
             "ActionCode": "S.VEHICLE.LOCATION",
             "ViewName": "LOGIN",
@@ -1825,6 +1864,7 @@
     {
         "code": "S.NEAREST.AIRPORTS",
         "desc": "Get Nearest Airports",
+        "notes": "",
         "payload": {
             "ActionCode": "S.NEAREST.AIRPORTS",
             "ViewName": "LOGIN",
@@ -1864,6 +1904,7 @@
     {
         "code": "S.CALL.TABLE.DETAIL",
         "desc": "Get Ride Detail",
+        "notes": "",
         "payload": {
             "ActionCode": "S.CALL.TABLE.DETAIL",
             "ViewName": "LOGIN",
@@ -1904,6 +1945,7 @@
     {
         "code": "S.CALL.TABLE.PAST",
         "desc": "Get Past Rides",
+        "notes": "",
         "payload": {
             "ActionCode": "S.CALL.TABLE",
             "ViewName": "LOGIN",
@@ -1951,6 +1993,7 @@
     {
         "code": "S.CALL.TABLE.UPCOMING",
         "desc": "Get Upcoming Rides",
+        "notes": "",
         "payload": {
             "ActionCode": "S.CALL.TABLE",
             "ViewName": "LOGIN",
@@ -1998,6 +2041,7 @@
     {
         "code": "U.CALL.TABLE",
         "desc": "Update Reservation",
+        "notes": "p_CT_TRIP_TYPE: (1 = One Way,  2 = Hourly,  3 = Round Trip), p_CT_PAYMENT_TYPE:  (1 = Direct Bill, 2 = Credit Card), p_CT_AIRPORT_POLICY: (I = Inside, O = Outside, S = Standby)",
         "payload": {
             "ActionCode": "U.CALL.TABLE",
             "ViewName": "LOGIN",
@@ -2151,6 +2195,7 @@
     {
         "code": "U.CALL.TABLE.WAIT.FOR.ME",
         "desc": "Update Reservation Driver Text - Wait For Me",
+        "notes": "",
         "payload": {
             "ActionCode": "U.CALL.TABLE.WAIT.FOR.ME",
             "ViewName": "LOGIN",
@@ -2191,6 +2236,7 @@
     {
         "code": "U.CALL.TABLE.FOLLOW.ME",
         "desc": "Update Reservation Pickup Info - Follow Me",
+        "notes": "",
         "payload": {
             "ActionCode": "U.CALL.TABLE.FOLLOW.ME",
             "ViewName": "LOGIN",
@@ -2231,6 +2277,7 @@
     {
         "code": "U.CALL.TABLE.TIPS",
         "desc": "Update Reservation Tips - Add Gratuity",
+        "notes": "",
         "payload": {
             "ActionCode": "U.CALL.TABLE.TIPS",
             "ViewName": "LOGIN",
@@ -2272,6 +2319,7 @@
     {
         "code": "U.CALL.TABLE.RATING",
         "desc": "Rate Driver, Vehicle, Booking Experience",
+        "notes": "p_CGN_RATING_FOR: (D = Driver, V = Vehicle, E = Experience)",
         "payload": {
             "ActionCode": "U.CALL.TABLE.RATING",
             "ViewName": "LOGIN",
@@ -2315,6 +2363,7 @@
     {
         "code": "S.SERVICE.LOG",
         "desc": "Fetch Service Log",
+        "notes": "JMetaData.Headings: [DB COLUMN NAME, TITLE, Data Type, Format/Mask, Hidden, Field Type, ReadOnly | Editable, Required , Max Length, Min Length ]",
         "payload": {
             "ActionCode": "S.SERVICE.LOG",
             "ViewName": "LOGIN",
@@ -2360,6 +2409,7 @@
     {
         "code": "U.CALL.TABLE.CANCEL.RES",
         "desc": "Cancel Reservation",
+        "notes": "",
         "payload": {
             "ActionCode": "U.CALL.TABLE.CANCEL.RES",
             "ViewName": "LOGIN",
@@ -2401,287 +2451,287 @@
     {
         "code": "S.APP.VIEWS.HELP",
         "desc": "WebView for HELP",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.VIEWS",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_VIEW_NAME":"HELP"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.VIEWS",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_VIEW_NAME": "HELP"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     },
     {
         "code": "S.APP.VIEWS.TERMS",
         "desc": "WebView for Terms and Conditions",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.VIEWS",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_VIEW_NAME":"TERMS"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.VIEWS",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_VIEW_NAME": "TERMS"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     },
     {
         "code": "S.APP.VIEWS.RIDE.DETAIL",
         "desc": "WebView for Ride Detail",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.VIEWS",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_VIEW_NAME":"RIDE_DETAIL"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.VIEWS",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_VIEW_NAME": "RIDE_DETAIL"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     },
     {
         "code": "S.APP.VIEWS.RECEIPT",
         "desc": "WebView for Receipt",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.VIEWS",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_VIEW_NAME":"RECEIPT"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.VIEWS",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_VIEW_NAME": "RECEIPT"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     },
     {
         "code": "S.APP.SECTION.ANNOUNCEMENT",
         "desc": "Dashboard Announcment Section",
+        "notes": "p_SECTION_NAME possible values are: ANNOUNCEMENT, SERVICES, CLASSES",
         "payload": {
             "ActionCode": "S.APP.SECTION",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.SECTION",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_SECTION_NAME":"ANNOUNCEMENT"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.SECTION",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_SECTION_NAME": "ANNOUNCEMENT"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     },
     {
         "code": "S.APP.SECTION.SERVICES",
         "desc": "Dashboard Services Section",
+        "notes": "p_SECTION_NAME possible values are: ANNOUNCEMENT, SERVICES, CLASSES",
         "payload": {
             "ActionCode": "S.APP.SECTION",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.SECTION",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_SECTION_NAME":"SERVICES"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.SECTION",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_SECTION_NAME": "SERVICES"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     },
     {
         "code": "S.APP.SECTION.CLASSES",
         "desc": "Dashboard Service Classes Section",
+        "notes": "p_SECTION_NAME possible values are: ANNOUNCEMENT, SERVICES, CLASSES",
         "payload": {
             "ActionCode": "S.APP.SECTION",
             "ViewName": "LOGIN",
             "ClientIP": "72.255.40.37",
             "JsonReq": {
-                        "JHeader": {
-                            "Client": "ELITE",
-                            "Source": "NativeApp",
-                            "Target": "DBAPI",
-                            "DeviceType": "Apple",
-                            "DeviceInfo": "iPhone 14 A2483",
-                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
-                            "ViewName": "LOGIN",
-                            "ActionCode": "S.APP.SECTION",
-                            "ClientVersion": "1.0.0",
-                            "APIVersion": "1.0.1",
-                            "APILogin": "user@webapis.com",
-                            "APIPassword": "12345",
-                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
-                            "Debug": "false",
-                            "GPSLatitude":"40.78200",
-                            "GPSLongitude":"-73.97783",
-                            "GPSSpeed":"22",
-                            "GPSBearing":"55"
-                        },
-                        "JMetaData": {},
-                        "JData": {
-                            "p_VP_COMPANY_NUM": "101",
-                            "p_VP_ACCOUNT_NUM": "515",
-                            "p_VP_VIP_NUM": "9174553429",
-                            "p_VP_USERID": "1234567891234",
-                            
-                            "p_SECTION_NAME":"CLASSES"
-                        }
-                    }	,
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.SECTION",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_SECTION_NAME": "CLASSES"
+                }
+            },
             "Notes": "Test Notes ..."
         }
     }

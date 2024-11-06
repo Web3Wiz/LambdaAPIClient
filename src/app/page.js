@@ -14,6 +14,7 @@ const GatewayApiTest = () => {
     process.env.NEXT_PUBLIC_API_GATEWAY_URL
   );
   const [gatewayApiRequest, setGatewayApiRequest] = useState();
+  const [gatewayApiRequestNotes, setGatewayApiRequestNotes] = useState();
   const [gatewayApiResponseStatus, setGatewayApiResponseStatus] = useState("");
   const [gatewayApiResponseText, setGatewayApiResponseText] = useState("");
   const [authTokenId, setAuthTokenId] = useState();
@@ -64,6 +65,7 @@ const GatewayApiTest = () => {
 
     if (selectedAction) {
       setGatewayApiRequest(JSON.stringify(selectedAction.payload, null, 2));
+      setGatewayApiRequestNotes(selectedAction.notes);
     }
   };
 
@@ -276,6 +278,18 @@ const GatewayApiTest = () => {
           />
         </div>
         <div className={styles.formGroup}>
+          <label htmlFor="txtGatewayAPIRequest" className={styles.label}>
+            Gateway API Call Notes
+          </label>
+          <textarea
+            id="txtGatewayAPIRequestNotes"
+            name="txtGatewayAPIRequestNotes"
+            value={gatewayApiRequestNotes}
+            onChange={(e) => setGatewayApiRequestNotes(e.target.value)}
+            className={styles.textAreaSmall}
+          />
+        </div>
+        <div className={styles.formGroup}>
           <label htmlFor="txtGatewayAPIResponseStatus" className={styles.label}>
             Gateway API Response Status
           </label>
@@ -308,6 +322,9 @@ const GatewayApiTest = () => {
           >
             {inProgress ? "Making Request..." : "Make API Request"}
           </button>
+        </div>
+        <div className={styles.lblLink}>
+          <Link href="mailto:kazimbukhari@gmail.com">Report Issues</Link>
         </div>
       </form>
     </div>

@@ -1,7 +1,7 @@
 .container {
   max-width: 11366px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,9 @@
 }
 
 .input,
-.textArea {
+.textArea,
+.textAreaSmall 
+{
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -53,7 +55,9 @@
 .textArea {
   height: 130px;
 }
-
+.textAreaSmall {
+  height: 50px;
+}
 .readOnlyInput {
   background-color: #f9f9f9;
 }

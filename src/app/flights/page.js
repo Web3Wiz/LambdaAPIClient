@@ -7,12 +7,14 @@ import {
   InitiateAuthCommand,
 } from "@aws-sdk/client-cognito-identity-provider";
 import axios from "axios";
+import Link from "next/link";
 
 const FlightViewApiTest = () => {
   const [gatewayApiUrl, setGatewayApiUrl] = useState(
     process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL
   );
   const [gatewayApiRequest, setGatewayApiRequest] = useState();
+  const [gatewayApiRequestNotes, setGatewayApiRequestNotes] = useState();
   const [gatewayApiResponseStatus, setGatewayApiResponseStatus] = useState("");
   const [gatewayApiResponseText, setGatewayApiResponseText] = useState("");
   const [authTokenId, setAuthTokenId] = useState();
@@ -63,6 +65,7 @@ const FlightViewApiTest = () => {
 
     if (selectedAction) {
       setGatewayApiRequest(JSON.stringify(selectedAction.payload, null, 2));
+      setGatewayApiRequestNotes(selectedAction.notes);
     }
   };
 
@@ -275,6 +278,18 @@ const FlightViewApiTest = () => {
           />
         </div>
         <div className={styles.formGroup}>
+          <label htmlFor="txtGatewayAPIRequest" className={styles.label}>
+            Gateway API Call Notes
+          </label>
+          <textarea
+            id="txtGatewayAPIRequestNotes"
+            name="txtGatewayAPIRequestNotes"
+            value={gatewayApiRequestNotes}
+            onChange={(e) => setGatewayApiRequestNotes(e.target.value)}
+            className={styles.textAreaSmall}
+          />
+        </div>
+        <div className={styles.formGroup}>
           <label htmlFor="txtGatewayAPIResponseStatus" className={styles.label}>
             FlightView API Response Status
           </label>
@@ -307,6 +322,9 @@ const FlightViewApiTest = () => {
           >
             {inProgress ? "Making Request..." : "Make API Request"}
           </button>
+        </div>
+        <div className={styles.lblLink}>
+          <Link href="mailto:kazimbukhari@gmail.com">Report Issues</Link>
         </div>
       </form>
     </div>
