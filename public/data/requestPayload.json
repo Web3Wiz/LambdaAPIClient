@@ -2236,7 +2236,7 @@
     {
         "code": "U.CALL.TABLE.FOLLOW.ME",
         "desc": "Update Reservation Pickup Info - Follow Me",
-        "notes": "",
+        "notes": "This request is not a one-time action but a recurring one. You need to continue sending it at regular intervals (e.g., every 30 seconds) until the passenger has boarded the car.",
         "payload": {
             "ActionCode": "U.CALL.TABLE.FOLLOW.ME",
             "ViewName": "LOGIN",
@@ -2770,6 +2770,134 @@
                             "p_VP_ACCOUNT_NUM": "515",
                             "p_VP_VIP_NUM": "9174553429",
                             "p_VP_USERID": "1234567891234"
+                        }
+                    }	,
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "A.MESSAGE.QUEUE.SERVICE.LOG",
+        "desc": "Send Service Log Email",
+        "notes": "p_MQ_OBJECT_NAME possible values are: SERVICE_LOG or RECEIPT. p_MQ_OBJECT_ID_LIST will hold Booking/Reservation Number",
+        "payload": {
+            "ActionCode": "A.MESSAGE.QUEUE",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                        "JHeader": {
+                            "Client": "ELITE",
+                            "Source": "NativeApp",
+                            "Target": "DBAPI",
+                            "DeviceType": "Apple",
+                            "DeviceInfo": "iPhone 14 A2483",
+                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                            "ViewName": "LOGIN",
+                            "ActionCode": "A.MESSAGE.QUEUE",
+                            "ClientVersion": "1.0.0",
+                            "APIVersion": "1.0.1",
+                            "APILogin": "user@webapis.com",
+                            "APIPassword": "12345",
+                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                            "Debug": "false",
+                            "GPSLatitude":"40.78200",
+                            "GPSLongitude":"-73.97783",
+                            "GPSSpeed":"22",
+                            "GPSBearing":"55"
+                        },
+                        "JMetaData": {},
+                        "JData": {
+                            "p_VP_COMPANY_NUM": "101",
+                            "p_VP_ACCOUNT_NUM": "515",
+                            "p_VP_VIP_NUM": "9174553429",
+                            "p_VP_USERID": "1234567891234",
+                            "p_MQ_OBJECT_NAME":"SERVICE_LOG",
+                            "p_MQ_OBJECT_ID_LIST":"ALK0104",
+                            "p_MQ_TO_ADDRESS":"kazim@soundviewtech.com",
+                            "p_MQ_CC_LIST":"etech.kaziM@gmail.com"
+                        }
+                    }	,
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "A.MESSAGE.QUEUE.RECEIPT",
+        "desc": "Send Receipt Email",
+        "notes": "p_MQ_OBJECT_NAME possible values are: SERVICE_LOG or RECEIPT. p_MQ_OBJECT_ID_LIST will hold Booking/Reservation Number",
+        "payload": {
+            "ActionCode": "A.MESSAGE.QUEUE",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                        "JHeader": {
+                            "Client": "ELITE",
+                            "Source": "NativeApp",
+                            "Target": "DBAPI",
+                            "DeviceType": "Apple",
+                            "DeviceInfo": "iPhone 14 A2483",
+                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                            "ViewName": "LOGIN",
+                            "ActionCode": "A.MESSAGE.QUEUE",
+                            "ClientVersion": "1.0.0",
+                            "APIVersion": "1.0.1",
+                            "APILogin": "user@webapis.com",
+                            "APIPassword": "12345",
+                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                            "Debug": "false",
+                            "GPSLatitude":"40.78200",
+                            "GPSLongitude":"-73.97783",
+                            "GPSSpeed":"22",
+                            "GPSBearing":"55"
+                        },
+                        "JMetaData": {},
+                        "JData": {
+                            "p_VP_COMPANY_NUM": "101",
+                            "p_VP_ACCOUNT_NUM": "515",
+                            "p_VP_VIP_NUM": "9174553429",
+                            "p_VP_USERID": "1234567891234",
+                            "p_MQ_OBJECT_NAME":"RECEIPT",
+                            "p_MQ_OBJECT_ID_LIST":"ALK0104",
+                            "p_MQ_TO_ADDRESS":"kazim@soundviewtech.com",
+                            "p_MQ_CC_LIST":"etech.kaziM@gmail.com"
+                        }
+                    }	,
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "S.INFO.ICON.VIEWS",
+        "desc": "For 'i' icon views",
+        "notes": "Retrieve the value of p_BASE_URL in response and concatenate it with the desired field (e.g., p_PASSWORD, p_MYSTERY_CHARGE, etc.) to construct a URL. For example: https://m.eliteny.com/Views/help.html#password OR https://m.eliteny.com/Views/help.html#mystery",
+        "payload": {
+            "ActionCode": "S.INFO.ICON.VIEWS",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                        "JHeader": {
+                            "Client": "ELITE",
+                            "Source": "NativeApp",
+                            "Target": "DBAPI",
+                            "DeviceType": "Apple",
+                            "DeviceInfo": "iPhone 14 A2483",
+                            "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                            "ViewName": "LOGIN",
+                            "ActionCode": "S.INFO.ICON.VIEWS",
+                            "ClientVersion": "1.0.0",
+                            "APIVersion": "1.0.1",
+                            "APILogin": "user@webapis.com",
+                            "APIPassword": "12345",
+                            "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                            "Debug": "false",
+                            "GPSLatitude":"40.78200",
+                            "GPSLongitude":"-73.97783",
+                            "GPSSpeed":"22",
+                            "GPSBearing":"55"
+                        },
+                        "JMetaData": {},
+                        "JData": {
+                            "p_VP_COMPANY_NUM": "101",
+                            "p_VP_ACCOUNT_NUM": "515",
+                            "p_VP_VIP_NUM": "9174553429",
+                            "p_VP_USERID": "1234567891234",
                         }
                     }	,
             "Notes": "Test Notes ..."
