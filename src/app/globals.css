@@ -105,3 +105,20 @@ a {
     color-scheme: dark;
   }
 }
+
+ pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top:30px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  /*font-family: "Courier New", monospace;*/
+  font-size: 14px;
+  color: #000;
+}  
