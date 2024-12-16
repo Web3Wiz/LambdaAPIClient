@@ -2,6 +2,7 @@
     {
         "code": "S.FLIGHT.SCHEDULE.DEPARTURE.AIRLINES",
         "desc": "Get Departure Airlines and Flight Nums",
+        "notes": "Enter current or future DepartureDate in YYYYMMDD format (e.g 20240520) and DepartureHour in 24 hours format (e.g. 1600) ",
         "payload": 
         {
             "ActionCode": "S.FLIGHT.SCHEDULE",
@@ -51,6 +52,7 @@
     {
         "code": "S.FLIGHT.SCHEDULE.ARRIVAL.AIRLINES",
         "desc": "Get Arrival Airlines and Flight Nums",
+        "notes": "Enter current or future ArrivalDate in YYYYMMDD format (e.g 20240520) and ArrivalHour in 24 hours format (e.g. 1600) ",
         "payload": 
         {
             "ActionCode": "S.FLIGHT.SCHEDULE",
