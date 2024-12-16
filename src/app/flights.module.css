@@ -85,3 +85,38 @@
   padding-right:50px;
   border:0px;
 }
+.copyCode {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  bottom:10px;
+  color: #4c4c4c;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.copyCode:hover {
+  color: #a14208;
+}
+.codeWrap {
+
+  white-space: pre-wrap;
+  word-wrap: break-word; 
+}
+.labelContainer {
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.toggleLink {
+  color: #0070f3; /* Link color */
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.toggleLink:hover {
+  color: #089cf8; /* Hover color */
+}

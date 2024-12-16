@@ -17,6 +17,8 @@ const FlightViewApiTest = () => {
   const [gatewayApiRequestNotes, setGatewayApiRequestNotes] = useState();
   const [gatewayApiResponseStatus, setGatewayApiResponseStatus] = useState("");
   const [gatewayApiResponseText, setGatewayApiResponseText] = useState("");
+  const [rawGatewayApiResponse, setRawGatewayApiResponse] = useState(""); // To store raw response
+  const [showRaw, setShowRaw] = useState(false); // Toggle between raw and beautified view
   const [authTokenId, setAuthTokenId] = useState();
   const [username, setUsername] = useState(
     process.env.NEXT_PUBLIC_COGNITO_USERNAME
@@ -35,6 +37,8 @@ const FlightViewApiTest = () => {
   const hideInProgress = () => setInProgress(false);
   const showGettingToken = () => setGettingToken(true);
   const hideGettingToken = () => setGettingToken(false);
+
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     // Fetch action codes from JSON file when component mounts
@@ -67,6 +71,43 @@ const FlightViewApiTest = () => {
       setGatewayApiRequest(JSON.stringify(selectedAction.payload, null, 2));
       setGatewayApiRequestNotes(selectedAction.notes);
     }
+  };
+
+  const toggleResponseView = () => {
+    setShowRaw(!showRaw);
+    setGatewayApiResponseText(
+      showRaw ? beautifyJson(rawGatewayApiResponse) : rawGatewayApiResponse
+    );
+  };
+  const preprocessJson = (jsonString) => {
+    try {
+      //Parsing is not required for FlightView responses. Let's just return the jsonString as is:
+      return jsonString;
+
+      //return JSON.parse(jsonString); // Parse the raw escaped string into a JSON object
+    } catch (error) {
+      console.error("Error parsing raw JSON string:", error);
+      return jsonString; // Return as-is if parsing fails
+    }
+  };
+  const beautifyJson = (jsonString) => {
+    try {
+      const unescapedJson = preprocessJson(jsonString);
+      return JSON.stringify(JSON.parse(unescapedJson), null, 2);
+    } catch (error) {
+      console.error("Error beautifying JSON:", error);
+      return jsonString; // Return raw string if parsing fails
+    }
+  };
+
+  const handleCopy = () => {
+    navigator.clipboard
+      .writeText(gatewayApiResponseText)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); // Reset copied status after 2 seconds
+      })
+      .catch((err) => console.error("Failed to copy: ", err));
   };
 
   const getAuthToken = async (e) => {
@@ -106,14 +147,17 @@ const FlightViewApiTest = () => {
         cognitoToken
       );
       setGatewayApiResponseStatus(apiResponse.status);
-      setGatewayApiResponseText(apiResponse.text);
+      setRawGatewayApiResponse(apiResponse.text); // Save raw response
+      setGatewayApiResponseText(beautifyJson(apiResponse.text)); // Save beautified response
+
       if (apiResponse.status == 200)
         info += "API response received successfully.";
 
       setInfoLabel(info);
     } catch (error) {
       setGatewayApiResponseStatus("Error");
-      setGatewayApiResponseText(error.message);
+      setRawGatewayApiResponse(error.message); // Save raw error
+      setGatewayApiResponseText(error.message); // Display raw error
     } finally {
       hideInProgress();
     }
@@ -303,16 +347,46 @@ const FlightViewApiTest = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="txtGatewayAPIResponseText" className={styles.label}>
-            FlightView API Response
-          </label>
+          <div className={styles.labelContainer}>
+            <label htmlFor="txtGatewayAPIResponseText" className={styles.label}>
+              FlightView API Response
+            </label>
+            <a
+              onClick={toggleResponseView}
+              className={styles.toggleLink}
+              style={{
+                display: gatewayApiResponseText == "" ? "none" : "block",
+              }}
+            >
+              {showRaw ? "Beautify JSON Response" : "Show Raw JSON Response"}
+            </a>
+          </div>
+
           <textarea
             id="txtGatewayAPIResponseText"
             name="txtGatewayAPIResponseText"
             value={gatewayApiResponseText}
             readOnly
             className={styles.textArea}
+            hidden={true}
           />
+
+          <div style={{ position: "relative" }}>
+            {/* Copy Code Link */}
+            <span
+              onClick={handleCopy}
+              className={styles.copyCode}
+              style={{
+                display: gatewayApiResponseText == "" ? "none" : "block",
+              }}
+            >
+              {copied ? "Copied!" : "Copy Code"}
+            </span>
+            {/* Code Block */}
+            <pre>
+              <code className={styles.codeWrap}>{gatewayApiResponseText}</code>
+            </pre>
+          </div>
         </div>
         <div className={styles.formGroup}>
           <button
