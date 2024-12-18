@@ -149,6 +149,9 @@ const GatewayApiTest = () => {
 
       if (apiResponse.status == 200)
         info += "API response received successfully.";
+
+      if (apiResponse.status == 401) setAuthTokenId(null);
+
       setInfoLabel(info);
     } catch (error) {
       setGatewayApiResponseStatus("Error");
@@ -202,9 +205,13 @@ const GatewayApiTest = () => {
         "Error details:",
         error.response ? error.response.data : error.message
       );
+      let errMsg = error.response ? error.response.data : error.message;
+      if (error.status == 401)
+        errMsg +=
+          ". \n\nPlease retry. It will automatically generate a new token with the incoming request.";
       return {
-        status: "API Gateway Error",
-        text: `${error.response ? error.response.data : error.message}`,
+        status: error.status,
+        text: errMsg,
       };
     }
   };
