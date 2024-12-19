@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const FlightViewApiTest = () => {
   const [gatewayApiUrl, setGatewayApiUrl] = useState(
-    process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL
+    process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL_DEVP
   );
   const [gatewayApiRequest, setGatewayApiRequest] = useState();
   const [gatewayApiRequestNotes, setGatewayApiRequestNotes] = useState();
@@ -32,6 +32,7 @@ const FlightViewApiTest = () => {
   const [infoLabel, setInfoLabel] = useState("");
   const [actionCodes, setActionCodes] = useState([]);
   const [selectedActionCode, setSelectedActionCode] = useState("");
+  const [selectedEnvironmentStage, setSelectedEnvironmentStage] = useState("D");
 
   const showInProgress = () => setInProgress(true);
   const hideInProgress = () => setInProgress(false);
@@ -57,6 +58,17 @@ const FlightViewApiTest = () => {
 
     fetchActionCodes();
   }, []);
+
+  const handleEnvironmentStageChange = async (e) => {
+    const selectedStage = e.target.value;
+    setSelectedEnvironmentStage(selectedStage);
+
+    if (selectedStage == "S")
+      setGatewayApiUrl(process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL_STAG);
+    else if (selectedStage == "P")
+      setGatewayApiUrl(process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL_PROD);
+    else setGatewayApiUrl(process.env.NEXT_PUBLIC_API_FLIGHTVIEW_URL_DEVP);
+  };
 
   const handleActionCodeChange = async (e) => {
     const selectedCode = e.target.value;
@@ -92,7 +104,10 @@ const FlightViewApiTest = () => {
   };
   const beautifyJson = (jsonString) => {
     try {
-      const unescapedJson = preprocessJson(jsonString);
+      const unescapedJson =
+        selectedEnvironmentStage == "D"
+          ? preprocessJson(jsonString)
+          : jsonString;
       return JSON.stringify(JSON.parse(unescapedJson), null, 2);
     } catch (error) {
       console.error("Error beautifying JSON:", error);
@@ -153,6 +168,8 @@ const FlightViewApiTest = () => {
       if (apiResponse.status == 200)
         info += "API response received successfully.";
 
+      if (apiResponse.status == 401) setAuthTokenId(null);
+
       setInfoLabel(info);
     } catch (error) {
       setGatewayApiResponseStatus("Error");
@@ -206,9 +223,13 @@ const FlightViewApiTest = () => {
         "Error details:",
         error.response ? error.response.data : error.message
       );
+      let errMsg = error.response ? error.response.data : error.message;
+      if (error.status == 401)
+        errMsg +=
+          ". \n\nPlease retry. It will automatically generate a new token with the incoming request.";
       return {
-        status: "API Gateway Error",
-        text: `${error.response ? error.response.data : error.message}`,
+        status: error.status,
+        text: errMsg,
       };
     }
   };
@@ -270,6 +291,22 @@ const FlightViewApiTest = () => {
         </div>
         <div className={styles.formGroup}>
           <label className={styles.infolabel}>{infoLabel}</label>
+        </div>
+
+        <div className={styles.formGroup}>
+          <label htmlFor="environmentStage" className={styles.label}>
+            Environment Stage
+          </label>
+          <select
+            id="environmentStage"
+            name="environmentStage"
+            value={selectedEnvironmentStage}
+            onChange={handleEnvironmentStageChange}
+            className={`${styles.input} ${styles.longInput}`}
+          >
+            <option value="D">Development</option>
+            <option value="S">Staging</option>
+          </select>
         </div>
 
         <div className={styles.formGroup}>

@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const GatewayApiTest = () => {
   const [gatewayApiUrl, setGatewayApiUrl] = useState(
-    process.env.NEXT_PUBLIC_API_GATEWAY_URL
+    process.env.NEXT_PUBLIC_API_GATEWAY_URL_DEVP
   );
   const [gatewayApiRequest, setGatewayApiRequest] = useState();
   const [gatewayApiRequestNotes, setGatewayApiRequestNotes] = useState();
@@ -32,6 +32,7 @@ const GatewayApiTest = () => {
   const [infoLabel, setInfoLabel] = useState("");
   const [actionCodes, setActionCodes] = useState([]);
   const [selectedActionCode, setSelectedActionCode] = useState("");
+  const [selectedEnvironmentStage, setSelectedEnvironmentStage] = useState("D");
 
   const showInProgress = () => setInProgress(true);
   const hideInProgress = () => setInProgress(false);
@@ -57,6 +58,17 @@ const GatewayApiTest = () => {
 
     fetchActionCodes();
   }, []);
+
+  const handleEnvironmentStageChange = async (e) => {
+    const selectedStage = e.target.value;
+    setSelectedEnvironmentStage(selectedStage);
+
+    if (selectedStage == "S")
+      setGatewayApiUrl(process.env.NEXT_PUBLIC_API_GATEWAY_URL_STAG);
+    else if (selectedStage == "P")
+      setGatewayApiUrl(process.env.NEXT_PUBLIC_API_GATEWAY_URL_PROD);
+    else setGatewayApiUrl(process.env.NEXT_PUBLIC_API_GATEWAY_URL_DEVP);
+  };
 
   const handleActionCodeChange = async (e) => {
     const selectedCode = e.target.value;
@@ -89,7 +101,10 @@ const GatewayApiTest = () => {
   };
   const beautifyJson = (jsonString) => {
     try {
-      const unescapedJson = preprocessJson(jsonString);
+      const unescapedJson =
+        selectedEnvironmentStage == "D"
+          ? preprocessJson(jsonString)
+          : jsonString;
       return JSON.stringify(JSON.parse(unescapedJson), null, 2);
     } catch (error) {
       console.error("Error beautifying JSON:", error);
@@ -273,6 +288,22 @@ const GatewayApiTest = () => {
         </div>
         <div className={styles.formGroup}>
           <label className={styles.infolabel}>{infoLabel}</label>
+        </div>
+
+        <div className={styles.formGroup}>
+          <label htmlFor="environmentStage" className={styles.label}>
+            Environment Stage
+          </label>
+          <select
+            id="environmentStage"
+            name="environmentStage"
+            value={selectedEnvironmentStage}
+            onChange={handleEnvironmentStageChange}
+            className={`${styles.input} ${styles.longInput}`}
+          >
+            <option value="D">Development</option>
+            <option value="S">Staging</option>
+          </select>
         </div>
 
         <div className={styles.formGroup}>
