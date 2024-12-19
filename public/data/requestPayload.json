@@ -216,7 +216,7 @@
     {
         "code": "S.ACCOUNT.VERIFICATION",
         "desc": "Verifies account number and account name from the db",
-        "notes": "",
+        "notes": "p_VP_PAYMENT_TYPE in response:  1 = Direct Bill, 2 = Credit Card",
         "payload": {
             "ActionCode": "S.ACCOUNT.VERIFICATION",
             "ViewName": "LOGIN",
