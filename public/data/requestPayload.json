@@ -413,7 +413,7 @@
     {
         "code": "S.MYSTERY.CHARGE.REQUIRED",
         "desc": "Confirms if mystery charge is required for the user",
-        "notes": "",
+        "notes": "Message = 0 (Not Required) , Message =  1 (Required)",
         "payload": {
             "ActionCode": "S.MYSTERY.CHARGE.REQUIRED",
             "ViewName": "LOGIN",
