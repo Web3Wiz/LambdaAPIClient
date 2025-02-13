@@ -2704,7 +2704,7 @@
     },
     {
         "code": "S.APP.VIEWS.PRICE",
-        "desc": "WebView for Receipt",
+        "desc": "WebView for Price Breakdown",
         "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
