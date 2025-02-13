@@ -2495,7 +2495,7 @@
     {
         "code": "S.APP.VIEWS.HELP",
         "desc": "WebView for HELP",
-        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
@@ -2527,6 +2527,7 @@
                     "p_VP_ACCOUNT_NUM": "515",
                     "p_VP_VIP_NUM": "9174553429",
                     "p_VP_USERID": "1234567891234",
+                    "p_CT_RESERVATION_NUM": "",
                     "p_VIEW_NAME": "HELP"
                 }
             },
@@ -2536,7 +2537,7 @@
     {
         "code": "S.APP.VIEWS.TERMS",
         "desc": "WebView for Terms and Conditions",
-        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
@@ -2568,6 +2569,7 @@
                     "p_VP_ACCOUNT_NUM": "515",
                     "p_VP_VIP_NUM": "9174553429",
                     "p_VP_USERID": "1234567891234",
+                    "p_CT_RESERVATION_NUM": "",
                     "p_VIEW_NAME": "TERMS"
                 }
             },
@@ -2577,7 +2579,7 @@
     {
         "code": "S.APP.VIEWS.PACAKGE",
         "desc": "WebView for Package Terms and Conditions",
-        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
@@ -2609,6 +2611,7 @@
                     "p_VP_ACCOUNT_NUM": "515",
                     "p_VP_VIP_NUM": "9174553429",
                     "p_VP_USERID": "1234567891234",
+                    "p_CT_RESERVATION_NUM": "",
                     "p_VIEW_NAME": "PACAKGE"
                 }
             },
@@ -2618,7 +2621,7 @@
     {
         "code": "S.APP.VIEWS.RIDE.DETAIL",
         "desc": "WebView for Ride Detail",
-        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
@@ -2650,6 +2653,7 @@
                     "p_VP_ACCOUNT_NUM": "515",
                     "p_VP_VIP_NUM": "9174553429",
                     "p_VP_USERID": "1234567891234",
+                    "p_CT_RESERVATION_NUM": "KDVX488",
                     "p_VIEW_NAME": "RIDE_DETAIL"
                 }
             },
@@ -2659,7 +2663,7 @@
     {
         "code": "S.APP.VIEWS.RECEIPT",
         "desc": "WebView for Receipt",
-        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
         "payload": {
             "ActionCode": "S.APP.VIEWS",
             "ViewName": "LOGIN",
@@ -2691,7 +2695,50 @@
                     "p_VP_ACCOUNT_NUM": "515",
                     "p_VP_VIP_NUM": "9174553429",
                     "p_VP_USERID": "1234567891234",
+                    "p_CT_RESERVATION_NUM": "KDVX488",
                     "p_VIEW_NAME": "RECEIPT"
+                }
+            },
+            "Notes": "Test Notes ..."
+        }
+    },
+    {
+        "code": "S.APP.VIEWS.PRICE",
+        "desc": "WebView for Receipt",
+        "notes": "p_VIEW_NAME possible values are: HELP, TERMS, RIDE_DETAIL, RECEIPT, PACKAGE, PRICE",
+        "payload": {
+            "ActionCode": "S.APP.VIEWS",
+            "ViewName": "LOGIN",
+            "ClientIP": "72.255.40.37",
+            "JsonReq": {
+                "JHeader": {
+                    "Client": "ELITE",
+                    "Source": "NativeApp",
+                    "Target": "DBAPI",
+                    "DeviceType": "Apple",
+                    "DeviceInfo": "iPhone 14 A2483",
+                    "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                    "ViewName": "LOGIN",
+                    "ActionCode": "S.APP.VIEWS",
+                    "ClientVersion": "1.0.0",
+                    "APIVersion": "1.0.1",
+                    "APILogin": "user@webapis.com",
+                    "APIPassword": "12345",
+                    "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                    "Debug": "false",
+                    "GPSLatitude": "40.78200",
+                    "GPSLongitude": "-73.97783",
+                    "GPSSpeed": "22",
+                    "GPSBearing": "55"
+                },
+                "JMetaData": {},
+                "JData": {
+                    "p_VP_COMPANY_NUM": "101",
+                    "p_VP_ACCOUNT_NUM": "515",
+                    "p_VP_VIP_NUM": "9174553429",
+                    "p_VP_USERID": "1234567891234",
+                    "p_CT_RESERVATION_NUM": "KDVX488",
+                    "p_VIEW_NAME": "PRICE"
                 }
             },
             "Notes": "Test Notes ..."
