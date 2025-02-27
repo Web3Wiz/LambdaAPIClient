@@ -788,7 +788,7 @@
     {
         "code": "S.VIP.CREDIT.CARDS",
         "desc": "Get User Credit Cards List",
-        "notes": "",
+        "notes": "p_VCI_CARD_TYPE in response:  0 = AmEx, 1 = Master, 2 = Visa, 5 = Discover",
         "payload": {
             "ActionCode": "S.VIP.CREDIT.CARDS",
             "ViewName": "LOGIN",
