@@ -236,7 +236,7 @@ const FlightViewApiTest = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>FlightView API Test</h1>
+      <h1 className={styles.heading}>Cloud FlightView API Test</h1>
       <div className={styles.lblLink}>
         <a href="/">Gateway API</a>
       </div>
