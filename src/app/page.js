@@ -233,7 +233,7 @@ const GatewayApiTest = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Gateway API Test</h1>
+      <h1 className={styles.heading}>Cloud Gateway API Test</h1>
       <div className={styles.lblLink}>
         <Link href="/flights">FlightView API</Link>
       </div>
