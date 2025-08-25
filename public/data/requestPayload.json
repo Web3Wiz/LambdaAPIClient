@@ -3034,5 +3034,36 @@
                     }	,
             "Notes": "Test Notes ..."
         }
+    },
+    {
+        "ActionCode": "S.SPECIAL.REQ.PRICE",
+        "ViewName": "BOOK A RIDE",
+        "ClientIP": "72.255.40.37",
+        "JsonReq": {
+                    "JHeader": {
+                        "Client": "ELITE",
+                        "Source": "NativeApp",
+                        "Target": "DBAPI",
+                        "DeviceType": "Apple",
+                        "DeviceInfo": "iPhone 14 A2483",
+                        "DeviceID": "ABCDEF12-34567890ABCDEF12",
+                        "ViewName": "BOOK A RIDE",
+                        "ActionCode": "S.SPECIAL.REQ.PRICE",
+                        "ClientVersion": "1.0.0",
+                        "APIVersion": "1.0.1",
+                        "APILogin": "user@webapis.com",
+                        "APIPassword": "12345",
+                        "RequestedURL": "http://domain.com/WebAPI/ProcessRequest",
+                        "Debug": "false"
+                    },
+                    "JMetaData": {},
+                    "JData": {
+                        "p_VP_COMPANY_NUM": "101",
+                        "p_VP_ACCOUNT_NUM": "515",
+                        "p_VP_VIP_NUM": "9174553429",
+                        "p_VP_USERID": "1234567891234"
+                    }
+                }	,
+        "Notes": "Test Notes ..."
     }
 ]
